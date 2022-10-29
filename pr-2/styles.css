@@ -135,13 +135,13 @@ body {
 	background-image: url(./images/hero.jpg);
 	background-size: cover;
 	height: 707px;	
-	padding-top: 194px;
 	position: relative;
 }
 
 .hero-container {
 	position:relative;
 	z-index: 1;
+	padding-top: 194px;
 }
 
 #hero-overlay {
@@ -154,7 +154,7 @@ body {
 	background-color: rgba(0, 0, 0, .7);
 }
 
-.title {
+.title-one {
 	font-family: Yeseva One; 
 	font-style: normal;
 	font-weight: 400;
@@ -182,14 +182,18 @@ body {
 	padding-bottom: 391px;
 }
 
+.window-container {
+	padding: 70px;
+}
+
 .admiral {
 	list-style: none;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	height: 43px;
-	width: 736px;
+	
 	margin-left: 548px;
+	margin-top: 0;
 }
 
 .admiral-item {
@@ -304,6 +308,29 @@ body {
 	margin-top: -434px;
 }
 
+.label {
+  cursor: pointer;
+}
+.checkbox{
+  display: none;
+}
+.fake{
+  display: inline-flex;
+  width: 18px;
+  height: 18px;
+  background: #E3B873;
+  color: #fff;
+  justify-content: center;
+}
+.fake::before{
+  content:"\2714";
+  opacity: 0;
+  transition: .2s;
+}
+.checkbox:checked + .fake::before{
+  opacity: 1;
+}
+
 .play {
 	background-image: url(./images/play.svg);
 	height: 116px;
@@ -347,6 +374,11 @@ body {
 	height: 18px;
 	margin-top: 26px;
 	margin-left: 495px;
+}
+
+.typesofrepair-container {
+	width: 1300px;
+	margin: 0 auto;
 }
 
 .typesof {
@@ -490,15 +522,42 @@ body {
 	color: #FFFFFF;
 }
 
+.house-container{
+	display: flex;
+	height: 740px;
+}
+
+/*.specialist {
+	width: 745px;
+	height: 845px;
+}*/
+
+.house {
+	background-image: url(./images/house.jpg);
+	height: 645px;
+	width: 732px;
+	/*border: 2px solid; color: black;*/
+	position: relative;
+	top: 100px;
+	bottom: 100px;
+	right: 100px;
+	background-repeat: no-repeat;
+}
+
+
+
 .list {
 	list-style: none;
-	margin-top: 200px;
-	margin-left: 100px;
+	position: absolute;
+	top: 87px;
+	right: 0;
+	bottom: 0;
+	left: 200px;
 }
 
 .class {
 	display: flex;
-	padding-bottom: 100px;
+	padding-bottom: 80px;
 }
 
 .list-item {
@@ -508,6 +567,7 @@ body {
     border: 8px solid #FFFFFF;
     box-shadow: 0px 5px 15px rgb(227 184 115 / 15%);
     border-radius: 50%;
+    position: relative;
 }
 
 .figure {
@@ -518,4 +578,152 @@ body {
 	line-height: 25px;
 	text-align: center;
 	color: #FFFFFF;
+	position: relative;
+  	left: 14px;
+  	top: 10px;
 }
+
+.forma {
+	height: 509px;
+	width: 506px;
+	border-radius: 0px;
+	background: #131313;
+	box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
+	margin-top: 190px;
+}
+
+.leave {
+	font-family: 'Nunito Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 26px;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+
+
+.pork {
+	background-image: url(./images/pork.svg);
+	height: 82px;
+	width: 441px;
+	border-radius: 0px;
+	margin-left: 745px;
+	margin-bottom: 201px;
+}
+
+.darksite-container {
+	width: 1300px;
+	height: 864px;
+	margin: 0 auto;
+	z-index: 1;
+}
+
+.darksite {
+	background-image: url(./images/darksite.jpg);
+	background-size: cover;
+	position: relative;
+}
+
+.komod {
+	background-image: url(./images/komod.jpg);
+	position: absolute;
+	height: 557px;
+	width: 354px;
+	top: -41px;
+	left: 581px;
+	right: 0;
+	bottom: 0;
+	background-repeat: no-repeat;
+	z-index: 3;
+}
+
+.tv {
+	background-image: url(./images/tv.jpg);
+	position: absolute;
+	height: 349px;
+	width: 354px;
+	top: 555;
+	left: 581px;
+	right: 0;
+	bottom: 0;
+	background-repeat: no-repeat;
+	z-index: 4;
+}
+
+.sofa {
+	background-image: url(./images/sofa.jpg);
+	position: absolute;
+	height: 275px;
+	width: 354px;
+	top: -112;
+	left: 984px;
+	right: 0;
+	bottom: 0;
+	background-repeat: no-repeat;
+	z-index: 5;
+}
+
+.table {
+	background-image: url(./images/table.jpg);
+	position: absolute;
+	height: 625px;
+	width: 354px;
+	top: 200px;
+	left: 984px;
+	right: 0;
+	bottom: 0;
+	background-repeat: no-repeat;
+	z-index: 6;
+}
+
+.all {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+
+#darksite-overlay {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, .7);
+}
+
+.title-two {
+	font-family: 'Yeseva One';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 27px;
+	line-height: 37px;
+	text-transform: uppercase;
+	color: #E3B873;
+	margin-left: 99px;
+	margin-top: 137px;
+}
+
+.dstyles {
+	list-style: none;
+	margin-left: 59px;
+}
+
+.dstyles-item {
+	margin-bottom: 25px;
+}
+
+.dstyles-item a {
+	text-decoration: none;
+	font-family: 'Nunito Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 38px;
+	color: #FFFFFF;
+}
+
+
